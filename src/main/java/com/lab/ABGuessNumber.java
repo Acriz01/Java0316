@@ -19,7 +19,27 @@ public class ABGuessNumber {
             Scanner sc=new Scanner(System.in);
             String guess=sc.next();
             int[] guessArray={guess.charAt(0)-48,guess.charAt(1)-48,guess.charAt(2)-48,guess.charAt(3)-48};
-            
+            //判斷a,b
+            int a=0,b=0;
+            for(int i=0;i<4;i++){
+                if(ansArray[i]==guessArray[i]){
+                    a++;
+                }
+            }
+            for(int i=0;i<4;i++){
+                for(int k=0;k<4;k++){
+                    if(ansArray[i]==guessArray[k]){
+                        b++;
+                        break;
+                    }
+                }
+            }
+            b-=a;//b扣掉多算a的部分，也可以在前面迴圈中的if判斷式中加入&&i!=k
+            System.out.printf("%d A %d B\n",a,b);
+            if(a==4){
+                System.out.println("Bingo");
+                break;
+            }
         } while (true);
     }
 }
