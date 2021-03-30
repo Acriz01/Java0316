@@ -13,13 +13,13 @@ import java.util.Scanner;
  */
 public class ABGuessNumber {
     public static void main(String[] args) {
-        
-//        int[] ansArray={5,8,4,1};
-//        do {            
-//            System.out.print("請輸入一組不重複的四位數:");
-//            Scanner sc=new Scanner(System.in);
-//            int guess=sc.nextInt();
-//            int[] guessArray={};
-//        } while (true);
+        int[] ansArray={5,8,4,1};
+        do {            
+            System.out.print("請輸入一組不重複的四位數:");
+            Scanner sc=new Scanner(System.in);
+            String guess=sc.next();
+            int[] guessArray={guess.charAt(0)-48,guess.charAt(1)-48,guess.charAt(2)-48,guess.charAt(3)-48};
+            
+        } while (true);
     }
 }
