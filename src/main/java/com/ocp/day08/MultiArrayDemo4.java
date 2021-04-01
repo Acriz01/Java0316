@@ -15,7 +15,7 @@ public class MultiArrayDemo4 {
         double[][] hw={{170,160,180},{60,45,90}};
         double bmi;
         for(int i=0;i<3;i++){
-            bmi=hw[1][i]/Math.pow((hw[0][i]/100),2);
+            bmi=hw[1][i]/Math.pow((hw[0][i]/100),2);//體重除以身高(公尺)的平方
             System.out.printf("BMI%d=%.2f\n",i,bmi);
         }
         
