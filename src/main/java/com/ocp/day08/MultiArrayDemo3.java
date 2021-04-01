@@ -25,13 +25,8 @@ public class MultiArrayDemo3 {
             double w=x[1];
             double bmi=w/Math.pow(h/100,2 );
             System.out.printf("%.2f\n",bmi);
-            */
-        }
-        
-        
-        
-        
-        
-        
+            
+        }*/
+    }  
     }
-}
+
