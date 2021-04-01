@@ -23,5 +23,19 @@ public class MultiArrayDemo1 {
                 System.out.println(m[i][j]);
             }
         }
+        
+        //改良
+         for(int i=0;i<m.length;i++){
+            for(int j=0;j<m[i].length;j++){
+                System.out.println(m[i][j]);
+            }
+        }
+        //改良2,for-each
+        for(int[] x:m){//x is m[0] or m[1]。分析m，裡面都是一維陣列x
+            for(int y:x){//分析x，裡面都是int y
+                System.out.println(y);
+            }
+        }
+        
     }
 }
