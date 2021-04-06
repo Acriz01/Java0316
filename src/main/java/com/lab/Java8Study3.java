@@ -25,7 +25,7 @@ public class Java8Study3 {
          System.out.println(avg1);
          //Java8:
          int sum2=IntStream.of(scores).sum();
-         double avg2=IntStream.of(scores).average().getAsDouble();
+         double avg2=IntStream.of(scores).average().getAsDouble();//average()出來是物件需要getAsDouble()指取average()中的double值
          double avg3=(double)sum2/scores.length;
          System.out.println(sum2);
          System.out.println(avg2);
