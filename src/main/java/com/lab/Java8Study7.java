@@ -20,5 +20,6 @@ public class Java8Study7 {
                .mapToInt(String::length)
                .sum();
         System.out.println(sum);
+        
     }
 }
