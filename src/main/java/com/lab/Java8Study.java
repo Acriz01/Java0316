@@ -26,6 +26,6 @@ public class Java8Study {
         }
         //Java8:(利用Stream.of()來進行資料分析)
         IntStream.of(scores).forEach(s -> System.out.println(s));//s代表一個stream(如同陣列)中的每一個元素
-        IntStream.of(scores).forEach(System.out::println);
+        IntStream.of(scores).forEach(System.out::println);//必定得到s，所以印出s
     }
 }
