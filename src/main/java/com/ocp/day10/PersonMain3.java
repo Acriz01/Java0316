@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class PersonMain3 {
     public static void main(String[] args) {
-        Person[] persons = {
+        Person[] people = {
             new Person("John",  17, 170, 60.5),
             new Person("Mary",  18, 160, 50.5),
             new Person("Jo",    19, 155, 42.5),
@@ -16,7 +16,7 @@ public class PersonMain3 {
         };
         // 計算 bmi 的平均, 最大與最小各為多少 ?
         Function<Person, Double> getBMI = p -> p.getWeight() / Math.pow(p.getHeight()/100, 2);
-        DoubleSummaryStatistics stat = Stream.of(persons)
+        DoubleSummaryStatistics stat = Stream.of(people)
                 .mapToDouble(getBMI::apply) // 相當於 p -> getBMI.apply(p)
                 .summaryStatistics();
         System.out.printf("平均: %.2f 最大: %.2f 最小: %.2f\n", 
