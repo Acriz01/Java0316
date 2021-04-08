@@ -19,7 +19,7 @@ public class PersonMain {
             new Person("John", 17, 170, 60.5),
             new Person("Mary", 18, 160, 50.5),
             new Person("Jo", 19, 155, 42.5),
-            new Person("Helen", 16, 180, 75.5),
+            new Person("Helen", 16, 185, 75.5),
             new Person("Tom", 21, 190, 120.5),};
         //請印出未成年的人名?
         Stream.of(people)
