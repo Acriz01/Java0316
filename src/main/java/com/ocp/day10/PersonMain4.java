@@ -48,7 +48,7 @@ public class PersonMain4 {
         Stream.of(people)
                 .flatMap(p->Stream.of(p))
                 .filter(p->getBMI.apply(p)==maxBmi)
-                .forEach(p -> System.out.println(p.getName()));
+                .forEach(printPerson);
         
     }
 }
