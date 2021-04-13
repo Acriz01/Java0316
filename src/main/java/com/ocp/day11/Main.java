@@ -28,7 +28,7 @@ public class Main {
                 System.out.printf("總薪資: %,d\n",getTotalSalary());
                 break;
             case 3:
-                System.out.printf("平均薪資: %,d\n",getSalaryOfAvg());
+                System.out.printf("平均薪資: %,.f\n",getSalaryOfAvg());
                 break;
             case 4:
                 System.out.printf("總預算: %,d\n",getTotalBudget());
