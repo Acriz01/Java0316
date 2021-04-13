@@ -1,20 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.ocp.day11;
 
 import java.util.Scanner;
 import static com.ocp.day11.EmployeeApi.*;
 import java.util.Arrays;
-/**
- *
- * @author MB-study
- */
+
 public class Main {
     public static void main(String[] args) {
-        
+        menu();
     }
     public static void menu(){
         System.out.println("--------------");
@@ -41,7 +34,7 @@ public class Main {
                 System.out.printf("總預算: %,d\n",getTotalBudget());
                 break;
             case 5:
-                System.out.printf("員工總: %,d\n",getAmount());
+                System.out.printf("員工總數: %,d\n",getAmount());
                 break;
             case 9:
                 return;
