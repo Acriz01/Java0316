@@ -65,6 +65,28 @@ public class ExtendsDemo {
              }
          }
          System.out.printf("Manager總薪資:%,d\n",sum5);
+         
+         // Java 8
+        int sum6 = Stream.of(employees)
+                .filter(e -> e.getClass().getSimpleName().equals("Manager")
+                || e.getClass().getSimpleName().equals("Director"))
+                .mapToInt(Employee::getSalary)
+                .sum();
+        System.out.printf("Manager 總薪資: %,d\n", sum6);
+        // 請問 Manager 的總薪資(salary)是多少 Part II ?
+        System.out.println("請問 Manager 總薪資(salary)是多少 Part II ?");
+        // 利用 instanceof 運算子
+        for (Employee e : employees) {
+            System.out.println(e instanceof Manager);
+        }
+        int sum7 = Stream.of(employees)
+                .filter(e -> e instanceof Manager)
+                .peek(e ->System.out.println(e))//可以窺視當前串流內的東西
+                .mapToInt(Employee::getSalary)
+                .peek(System.out::println)
+                .sum();
+        System.out.printf("Manager 總薪資: %,d\n", sum7);
+
     }
 
 }
