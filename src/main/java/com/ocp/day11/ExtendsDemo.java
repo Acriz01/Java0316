@@ -25,6 +25,9 @@ public class ExtendsDemo {
         System.out.println(e1);
         System.out.println(e2);
         System.out.println(e3);
+        System.out.println(m1);
+        System.out.println(m2);
+        System.out.println(d1);
         
     }
     
