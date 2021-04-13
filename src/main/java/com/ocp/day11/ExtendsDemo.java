@@ -12,14 +12,14 @@ public class ExtendsDemo {
         //------------------
         Manager m1=new Manager();
         m1.setSalary(7_0000);
-        m1.setBudger(10_0000);
+        m1.setBudget(10_0000);
         Manager m2=new Manager();
         m2.setSalary(8_0000);
-        m2.setBudger(15_0000);
+        m2.setBudget(15_0000);
         //------------------
         Director d1=new Director();
         d1.setSalary(20_0000);
-        d1.setBuget(50_0000);
+        d1.setBudget(50_0000);
         d1.setStockOption(300_0000);
     }
 }
