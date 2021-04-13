@@ -1,6 +1,8 @@
 
 package com.ocp.day11;
 
+import java.util.stream.Stream;
+
 
 public class EmployeeApi {
     private static Employee[] employees;
@@ -21,12 +23,34 @@ public class EmployeeApi {
         d1.setSalary(20_0000);
         d1.setBudget(50_0000);
         d1.setStockOption(300_0000);
-        System.out.println(e1);
-        System.out.println(e2);
-        System.out.println(e3);
-        System.out.println(m1);
-        System.out.println(m2);
-        System.out.println(d1);
         employees=new Employee[]{e1,e2,e3,m1,m2,d1};//二次指派
+    }
+    //取得所有員工資料
+    public static Employee[] getEmployees(){
+        return employees;
+    }
+    //取得總薪資
+    public static int getTotalSalary(){
+        return Stream.of(employees)
+                .flatMapToInt(Employee::getSalary)
+                .sum();
+    }
+    //取得平均薪資
+    public static double getSalaryOfAvg(){
+        return Stream.of(employees)
+                .mapToInt(Employee::getSalary)
+                .average()
+                .getAsDouble();
+    }
+    //取得總預算
+    public static int getTotalBudget(){
+        return Stream.of(employees)
+                .filter(e -> e instanceof Manager)
+                .mapToInt(Manager::getBudget)
+                .sum();
+    }
+    //取得員工總數
+    public static int amount(){
+        return employees.length;
     }
 }
