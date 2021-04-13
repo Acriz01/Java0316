@@ -1,6 +1,4 @@
-
 package com.ocp.day11;
-
 import java.util.stream.Stream;
 
 
@@ -49,6 +47,9 @@ public class EmployeeApi {
                 .map(e -> (Manager)e)//Manager串流
                 .mapToInt(e -> e.getBudget())
                 .sum();
+        /* instanceof 運算子是一個二元運算子，
+二元運作子接受兩個參數，通常是用來比較兩個參數間的關係，
+常見的二元運算子有 ==, > , < 等等。*/
     }
     //取得員工總數
     public static int amount(){
