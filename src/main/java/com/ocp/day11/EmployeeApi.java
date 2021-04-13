@@ -32,7 +32,7 @@ public class EmployeeApi {
     //取得總薪資
     public static int getTotalSalary(){
         return Stream.of(employees)
-                .flatMapToInt(Employee::getSalary)
+                .mapToInt(Employee::getSalary)
                 .sum();
     }
     //取得平均薪資
