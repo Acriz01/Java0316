@@ -46,7 +46,7 @@ public class EmployeeApi {
     public static int getTotalBudget(){
         return Stream.of(employees)//Employee串流
                 .filter(e -> e instanceof Manager)//到這裡，得到的是三個"Employee"，需要再轉型態成Manager
-                .map(e -> (Manager)e)//Manager串流!
+                .map(e -> (Manager)e)//Manager串流
                 .mapToInt(Manager::getBudget)
                 .sum();
     }
