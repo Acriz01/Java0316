@@ -47,7 +47,7 @@ public class EmployeeApi {
         return Stream.of(employees)//Employee串流
                 .filter(e -> e instanceof Manager)//到這裡，得到的是三個"Employee"，需要再轉型態成Manager
                 .map(e -> (Manager)e)//Manager串流
-                .mapToInt(Manager::getBudget)
+                .mapToInt(e -> e.getBudget())
                 .sum();
     }
     //取得員工總數
