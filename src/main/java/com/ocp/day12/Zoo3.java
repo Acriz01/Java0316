@@ -7,6 +7,10 @@ public class Zoo3 {
         cat.shout();
         ((Tiger)cat).hunter();
         Cat cat2=new Cat();
-        ((Tiger)cat2).hunter();
+        if(cat2 instanceof Tiger){
+            ((Tiger)cat2).hunter();//直接轉型會失敗，貓無法轉型成虎
+        }else{
+            System.out.println("cat2 不可轉 Tiger");
+        }
     }
 }
