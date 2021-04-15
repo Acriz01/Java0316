@@ -3,10 +3,19 @@ class Father{
     public Father() {
         System.out.println("Father");
     }
+    Father(int x) {
+        this();
+        System.out.println("Father: "+x);
+    }
 }
-class Son{
-    public Son() {
+class Son extends Father{
+    Son() {
+        this(100);
         System.out.println("Son");
+    }
+    Son(int x){
+        super(x);
+        System.out.println("Son: "+x);
     }
 }
 public class Family {
