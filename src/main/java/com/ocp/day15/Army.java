@@ -22,5 +22,12 @@ public class Army {
                 .mapToInt(Oil::spend)
                 .summaryStatistics();
         System.out.println(stat.getSum());
+        /* 
+         //問fughter,tank,truck總油耗=?
+        Oil[] oils = {fighter, tank, truck};
+        //int sum = Stream.of(oils).mapToInt(o -> o.spend()).sum();
+        int sum = Stream.of(oils).mapToInt(Oil::spend).sum();
+        System.out.println(sum);
+        */
     }
 }
