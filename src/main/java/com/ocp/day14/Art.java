@@ -7,7 +7,7 @@ public class Art extends Employee{
     }
 
     public Art(int salary) {
-        super(salary);
+        super(salary); 
     }
 
     @Override
