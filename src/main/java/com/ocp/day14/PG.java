@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.ocp.day14;
 
-/**
- *
- * @author MB-study
- */
-public class PG {
-    
+public class PG extends Employee{
+
+    public PG() {
+    }
+
+    public PG(int salary) {
+        super(salary);
+    }
+
+    @Override
+    public void job() {
+        System.out.println("寫程式");
+    }
+     
 }
