@@ -1,4 +1,3 @@
-
 package com.ocp.day14;
 
 import java.util.IntSummaryStatistics;
