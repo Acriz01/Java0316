@@ -14,12 +14,12 @@ public class AreaCalc {
             }
         };
         System.out.println(ca2.getArea(r));
-        //匿名類部類別 (圓體積)
+        //匿名類部類別 (圓體積) 
         double a=(double)4/3;
         CircleArea ca3=new CircleArea(){
             @Override
             public double getArea(double r){
-                return a*r*r*r*Math.PI;
+                return a*Math.pow(r, 3)*Math.PI;
             }
         };
         System.out.println(ca3.getArea(r));
