@@ -12,5 +12,10 @@ public class LambdaDemo {
         Stream.of(100,50,70,80,30)
                 .filter(x->x>=60)//Predicate
                 .forEach(System.out::println);//Consumer
+        
+        Stream.of("Mary","John","Bob","Helen")
+                .mapToInt(x->x.length())//Funtion
+                .forEach(System.out::println);//Consumer
     }
+    
 }
