@@ -13,7 +13,7 @@ public class DataCenter{
     Student s5=new Student(50,t1,"小鐘",16);
     Student s6=new Student(40,t2,"小彤",16);
     Student s7=new Student(30,t1,"小雪",17);
-    Person[] people={t1,t2,t3,s1,s2,s3,s4,s5,s6};
+    Person[] people={t1,t2,t3,s1,s2,s3,s4,s5,s6,s7};
     return people;
     }
 }
