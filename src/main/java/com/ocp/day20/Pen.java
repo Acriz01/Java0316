@@ -11,6 +11,15 @@ public class Pen {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        Pen p=(Pen)obj;
+        if(price==p.price){
+        return true; //To change body of generated methods, choose Tools | Templates.
+    }
+        return false;
+                }
+    
+    @Override
     public String toString() {
         return "Pen{" + "color=" + color + ", price=" + price + '}';
     }
