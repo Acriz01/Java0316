@@ -15,6 +15,12 @@ public class StringEqualsDemo {
         String a="Java";
         String b=a;//b指向a的位置
         System.out.println(a==b);
+        //hash code值
+        String foo="Java";
+        String bar=new String("Java");
+        System.out.println(foo.equals(bar));
+        System.out.println(foo.hashCode());
+        System.out.println(bar.hashCode());
     }
    
 }
