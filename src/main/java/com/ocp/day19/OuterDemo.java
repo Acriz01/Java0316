@@ -5,7 +5,7 @@ public class OuterDemo {
         Outer.Inner in=new Outer().new Inner();
         in.print();
         
-        Outer.SInner sin=new Outer().SInner();
+        Outer.SInner sin=new Outer.SInner();
         sin.print();
         
     }
