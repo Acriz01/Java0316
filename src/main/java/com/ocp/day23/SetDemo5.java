@@ -12,7 +12,7 @@ public class SetDemo5 {
         Set<Integer> nums=new TreeSet<>();
         //1-9任意5個
         Random r=new Random();
-        for(int i=0;i<7;i++){
+        while(nums.size()<7){
             int n=r.nextInt(9)+1;
             System.out.println("n:"+n);
             nums.add(n);
