@@ -19,5 +19,6 @@ public class SetDemo7 {
         System.out.println(sub);
         Set<Integer> sub2=data.subSet(2,true,8,true);//TreeSet API 定義
         System.out.println(sub2);
+        
     }
 }
