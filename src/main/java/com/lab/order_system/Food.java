@@ -1,16 +1,18 @@
-
 package com.lab.order_system;
 
 import java.util.Objects;
 
-
 public class Food {
+
     private int no;//餐點編號
     private String name;
     private char size;
     private int price;
 
     public Food(int no, String name, char size, int price) {
+        if (name.length() == 3) {
+            name = name.concat("　");
+        }
         this.no = no;
         this.name = name;
         this.size = size;
@@ -91,5 +93,4 @@ public class Food {
         return "Food{" + "no=" + no + ", name=" + name + ", size=" + size + ", price=" + price + '}';
     }
 
-    
 }
