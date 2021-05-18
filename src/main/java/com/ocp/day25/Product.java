@@ -1,8 +1,7 @@
-
 package com.ocp.day25;
 
-
 public class Product {
+
     //商品
     private String name;//品名
     private int price;//價格
@@ -32,6 +31,5 @@ public class Product {
     public String toString() {
         return "Product{" + "name=" + name + ", price=" + price + '}';
     }
-    
-    
+
 }
