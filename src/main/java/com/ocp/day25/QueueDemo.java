@@ -15,5 +15,15 @@ public class QueueDemo {
         String name=queue.poll();
         System.out.println("叫到:"+name);
         System.out.println("目前排隊的人:"+queue);
+        
+        name=queue.poll();
+        System.out.println("叫到:"+name);
+        System.out.println("目前排隊的人:"+queue);
+        
+        name=queue.poll();
+        System.out.println("叫到:"+name);
+        System.out.println("目前排隊的人:"+queue);
+        
+        System.out.println(queue.isEmpty());
     }
 }
