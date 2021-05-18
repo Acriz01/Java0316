@@ -6,8 +6,9 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class MapGroupingByDemo {
+
     public static void main(String[] args) {
-        List<String> names=new ArrayList<>();
+        List<String> names = new ArrayList<>();
         names.add("apple");
         names.add("banana");
         names.add("apple");
@@ -19,9 +20,14 @@ public class MapGroupingByDemo {
         //分組
         System.out.println(
                 names.stream()
-                .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+                     .collect(Collectors.groupingBy(name -> name, Collectors.counting()))
         );
-        
+
+        System.out.println(
+                names.stream()
+                     .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+        );
+
     }
-    
+
 }
