@@ -21,5 +21,10 @@ public class CollectionsDemo {
         Comparator<Integer> comparator=(o1,o2)->o2-o1;//後減前，由大到小
         Collections.sort(nums,comparator);
         System.out.println(nums);
+        
+         Collections.sort(nums); // 自然排序(小->大)
+        Collections.reverse(nums);
+        System.out.println(nums);
+        
     }
 }
